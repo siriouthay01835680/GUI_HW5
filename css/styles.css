@@ -120,7 +120,7 @@ div#tileContainer ul,li{
 #tileTable {
     float:right;
     position: relative;
-    left: 650px;
+    left: 600px;
     bottom: 350px;
     border: 1px solid black;
     background-color: white;
@@ -144,7 +144,7 @@ span{
 #directions{
     float:right;
     position: relative;
-    right: 350px;
+    right: 220px;
     width: 300px;
     height: 400px;
     bottom: 110px;
