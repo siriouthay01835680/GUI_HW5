@@ -41,42 +41,42 @@ h1, h2{
 
 /* setting all board divs with the corresponding images */
 #target1{
-    background-image: url("../graphics_data/board_img1.png");
+    background-image: url("./graphics_data/board_img1.png");
     background-size: cover;
     width: 168px;
     height: 180px;
     display: inline-block;
 }
 #target2{
-    background-image: url("../graphics_data/board_img2.png");
+    background-image: url("./graphics_data/board_img2.png");
     background-size: cover;
     width: 168px;
     height: 180px;
     display: inline-block;
 }
 #target3{
-    background-image: url("../graphics_data/board_img3.png");
+    background-image: url("./graphics_data/board_img3.png");
     background-size: cover;
     width: 168px;
     height: 180px;
     display: inline-block;
 }
 #target4{
-    background-image: url("../graphics_data/board_img4.png");
+    background-image: url("./graphics_data/board_img4.png");
     background-size: cover;
     width: 168px;
     height: 180px;
     display: inline-block;
 }
 #target5{
-    background-image: url("../graphics_data/board_img5.png");
+    background-image: url("./graphics_data/board_img5.png");
     background-size: cover;
     width: 168px;
     height: 180px;
     display: inline-block;
 }
 #target6{
-    background-image: url("../graphics_data/board_img6.png");
+    background-image: url("./graphics_data/board_img6.png");
     background-size: cover;
     width: 168px;
     height: 180px;
