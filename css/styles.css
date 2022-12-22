@@ -5,7 +5,7 @@
 
 /* margins for main containers of page */
 #scrabbleBoard, #tileContainer, #scoreContainer, #btnContainer{
-    margin: 50px;
+    margin: 10px;
 }
 /* setting main font & background color */
 body{
@@ -14,7 +14,7 @@ body{
 }
 /* styling for the main headers of page */
 h1{
-    font-size: 100px;
+    font-size: 80px;
     color:black;
     
 }
@@ -43,50 +43,50 @@ h1, h2{
 #target1{
     background-image: url("../graphics_data/board_img1.png");
     background-size: cover;
-    width: 168px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
 }
 #target2{
     background-image: url("../graphics_data/board_img2.png");
     background-size: cover;
-    width: 168px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
 }
 #target3{
     background-image: url("../graphics_data/board_img3.png");
     background-size: cover;
-    width: 168px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
 }
 #target4{
     background-image: url("../graphics_data/board_img4.png");
     background-size: cover;
-    width: 168px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
 }
 #target5{
     background-image: url("../graphics_data/board_img5.png");
     background-size: cover;
-    width: 168px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
 }
 #target6{
     background-image: url("../graphics_data/board_img6.png");
     background-size: cover;
-    width: 168px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
 }
 #target7{
     background-image: url("../graphics_data/board_img7.png");
     background-size: cover;
-    width: 168px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
 }
 /* setting tile rack image */
@@ -94,6 +94,8 @@ h1, h2{
     width: 640px;
     height: 182px;
     background-image: url("../graphics_data/scrabble-tile-holder-406774_640.png");
+    position: relative;
+    top: 50px;
     display: inline-block;
 }
 /* removing bullet point from tiles */
@@ -118,11 +120,12 @@ div#tileContainer ul,li{
 #tileTable {
     float:right;
     position: relative;
-    left: 1000px;
-    bottom: 600px;
+    left: 650px;
+    bottom: 350px;
     border: 1px solid black;
     background-color: white;
     padding: 5px;
+    font-size: x-small;
 }
 /* styling to make "mini" text smaller in header */
 span{
@@ -141,10 +144,10 @@ span{
 #directions{
     float:right;
     position: relative;
-    right: 700px;
-    width: 400px;
-    height: 100px;
-    top: 10px;
+    right: 350px;
+    width: 300px;
+    height: 400px;
+    bottom: 110px;
     
     
 }
@@ -157,6 +160,7 @@ span{
 #directions li{
     display:list-item;
     list-style-type:lower-roman;
+    font-size: x-small;
 }
 /* styling for tile table */
 table, th, td {
