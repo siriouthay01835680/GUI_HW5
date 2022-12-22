@@ -5,7 +5,7 @@
 
 /* margins for main containers of page */
 #scrabbleBoard, #tileContainer, #scoreContainer, #btnContainer{
-    margin: 10px;
+    margin: 20px;
 }
 /* setting main font & background color */
 body{
@@ -94,8 +94,6 @@ h1, h2{
     width: 640px;
     height: 182px;
     background-image: url("../graphics_data/scrabble-tile-holder-406774_640.png");
-    position: relative;
-    top: 50px;
     display: inline-block;
 }
 /* removing bullet point from tiles */
@@ -118,14 +116,10 @@ div#tileContainer ul,li{
 }
 /* positioning tile at right of page */
 #tileTable {
-    float:right;
-    position: relative;
-    left: 600px;
-    bottom: 350px;
-    border: 1px solid black;
-    background-color: white;
     padding: 5px;
     font-size: x-small;
+    width: 150px;
+    height: 500px;
 }
 /* styling to make "mini" text smaller in header */
 span{
@@ -142,13 +136,8 @@ span{
 }
 /* styling for directions & positioning */
 #directions{
-    float:right;
-    position: relative;
-    right: 220px;
     width: 300px;
     height: 400px;
-    bottom: 110px;
-    
     
 }
 #directions ul{
@@ -165,6 +154,7 @@ span{
 /* styling for tile table */
 table, th, td {
     border: 1px solid black;
+    background-color: white;
 }
 th{
     background-color: maroon;
@@ -173,5 +163,4 @@ th{
 tr:last-child{
     border-color: maroon;
     background-color: maroon;
-    color: white;
 }
