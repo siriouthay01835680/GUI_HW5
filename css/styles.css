@@ -1,0 +1,173 @@
+/* Aria Siriouthay
+    HW5
+    aria_siriouthay@student.uml.edu
+    help sites: w3, jquery docs, stackoverflow, ect. */
+
+/* margins for main containers of page */
+#scrabbleBoard, #tileContainer, #scoreContainer, #btnContainer{
+    margin: 50px;
+}
+/* setting main font & background color */
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color:bisque;
+}
+/* styling for the main headers of page */
+h1{
+    font-size: 100px;
+    color:black;
+    
+}
+h1, h2{
+    text-align: center;
+}
+/* setting font-size to 0 allows for divs of board imgs to have no space in between */
+/* https://stackoverflow.com/questions/19038799/why-is-there-an-unexplainable-gap-between-these-inline-block-div-elements */
+#scrabbleBoard{
+    font-size: 0;
+}
+/* styling for score container */
+#scoreContainer{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px;
+    font-size: larger;
+    background-color: white;
+}
+/* adding green border to droppable on hover */
+.drop {
+    border: solid 4px chartreuse;
+}
+
+/* setting all board divs with the corresponding images */
+#target1{
+    background-image: url(/graphics_data/board_img1.png);
+    background-size: cover;
+    width: 168px;
+    height: 180px;
+    display: inline-block;
+}
+#target2{
+    background-image: url(/graphics_data/board_img2.png);
+    background-size: cover;
+    width: 168px;
+    height: 180px;
+    display: inline-block;
+}
+#target3{
+    background-image: url(/graphics_data/board_img3.png);
+    background-size: cover;
+    width: 168px;
+    height: 180px;
+    display: inline-block;
+}
+#target4{
+    background-image: url(/graphics_data/board_img4.png);
+    background-size: cover;
+    width: 168px;
+    height: 180px;
+    display: inline-block;
+}
+#target5{
+    background-image: url(/graphics_data/board_img5.png);
+    background-size: cover;
+    width: 168px;
+    height: 180px;
+    display: inline-block;
+}
+#target6{
+    background-image: url(/graphics_data/board_img6.png);
+    background-size: cover;
+    width: 168px;
+    height: 180px;
+    display: inline-block;
+}
+#target7{
+    background-image: url(/graphics_data/board_img7.png);
+    background-size: cover;
+    width: 168px;
+    height: 180px;
+    display: inline-block;
+}
+/* setting tile rack image */
+#tileContainer{
+    width: 640px;
+    height: 182px;
+    background-image: url(/graphics_data/scrabble-tile-holder-406774_640.png);
+    display: inline-block;
+}
+/* removing bullet point from tiles */
+#tiles ul{
+    list-style-type: none;
+}
+/* allowing tiles to be displayed horizontally */
+div#tileContainer ul,li{
+    display: inline;
+}
+/* setting tile dimensions and positioning */
+.draggable > img{
+    width:50px;
+    height: 50px;
+    float:left;
+    position:relative;
+    bottom: -60px;
+    left: 100px;
+
+}
+/* positioning tile at right of page */
+#tileTable {
+    float:right;
+    position: relative;
+    left: 1000px;
+    bottom: 600px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px;
+}
+/* styling to make "mini" text smaller in header */
+span{
+    font-size: 60%;
+    font-style: italic;
+}
+/* button styling */
+.btn, .btn:disabled,.btn[disabled]{
+    background-color:forestgreen;
+    border: none;
+}
+.btn:hover{
+    background-color: darkslategray;
+}
+/* styling for directions & positioning */
+#directions{
+    float:right;
+    position: relative;
+    right: 700px;
+    width: 400px;
+    height: 100px;
+    top: 10px;
+    
+    
+}
+#directions ul{
+    border: 1px solid black;
+    padding: 5px;
+    list-style-position: inside;
+    background-color: white;
+}
+#directions li{
+    display:list-item;
+    list-style-type:lower-roman;
+}
+/* styling for tile table */
+table, th, td {
+    border: 1px solid black;
+}
+th{
+    background-color: maroon;
+    color: white;
+}
+tr:last-child{
+    border-color: maroon;
+    background-color: maroon;
+    color: white;
+}

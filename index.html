@@ -1,0 +1,86 @@
+<!-- 
+    Aria Siriouthay
+    HW5
+    aria_siriouthay@student.uml.edu
+    help sites: jquery docs, stackoverflow, ect.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstraps -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- jqeury theme -->
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <!-- CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Scrabble</title>
+</head>
+<body>
+    <!-- container to hold main headers -->
+    <div id="headerContainer">
+        <h1>Scrabble</h1>
+        <h2><span>mini</span> Edition</h2>
+    </div>
+    <hr>
+    <!-- container to hold scrabble board images -->
+    <div id="scrabbleBoard">
+        <!-- each image is held within a droppable div with a unique id -->
+        <!-- the data-info attribute will aid in determining what tile is dropped & where it is dropped -->
+        <div id="target1" class="droppable ui-widget-header" data-info=""></div>
+        <div id="target2" class="droppable ui-widget-header"data-info=""></div>
+        <div id="target3" class="droppable ui-widget-header"data-info=""></div>
+        <div id="target4" class="droppable ui-widget-header"data-info=""></div>
+        <div id="target5" class="droppable ui-widget-header"data-info=""></div>
+        <div id="target6" class="droppable ui-widget-header"data-info=""></div>
+        <div id="target7" class="droppable ui-widget-header"data-info=""></div>
+    </div>
+    <!-- container to hold total score and the amount of tiles left -->
+    <div id="scoreContainer">
+        <div id="score"><p>Score: </p></div>
+        <div id="tilesLeft"><p>Tiles left: </p></div>
+    </div>
+    <!-- container to hold game directions -->
+    <div id="directions">
+        <h3>How to Play</h3>
+        <ul>
+            <li><p>Drag the tiles to the game board. </p></li>
+            <li><p>Tiles must be placed directly next to one another.</p></li>
+            <li><p>After making a word, press the next word button to submit it.</p></li>
+            <li><p>To remove a tile from the board, click the tile to bring it back to the rack.</p></li>
+            <li><p>Words must be at least 2 letters long.</p></li>
+            <li><p>To get new tiles, press the new tiles button.</p></li>
+        </ul>
+    </div>
+    <!-- container to hold buttons -->
+    <div id="btnContainer">
+        <button class="btn btn-primary" type="button" value = "Submit" id="submit">Next Word</button>
+        <button class="btn btn-primary" type="button" value = "Submit" id="restart">Restart Game</button>
+        <button class="btn btn-primary" type="button" value = "Submit" id="new">New Tiles</button>
+    </div>
+    <!-- container to hold tile rack, tiles, and the tile table -->
+    <div id="tileContainer" >
+        <div id="tiles">
+            <ul>
+            </ul>
+        </div>
+        <div id="tileTable">
+            <table>
+                <thead>
+                </thead>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Jquery draggable -->
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <!-- file for game play functionality -->
+    <script src="js/scrabble.js"></script>
+    <!--  Jesse M. Heines, UMass Lowell Computer Science, heines@cs.uml.edu -->
+    <!-- Associative Array Structure used for tiles -->
+    <script src="js/Scrabble_Pieces_AssociativeArray_Jesse.js"></script>
+</body>
+</html>
